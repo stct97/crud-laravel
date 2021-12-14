@@ -21,4 +21,9 @@
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
     </div>
+    
+    @foreach ($usuarios as $usuario)
+        <p>{{ $usuario->email }}</p>
+        <p>{{ $usuario->password }}</p>
+    @endforeach
 @endsection
