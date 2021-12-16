@@ -1,5 +1,5 @@
 <x-slot name="header">
-<h1 class="text-gray-900">CRUD con Laravel 8 y Livewire</h1>
+<h1 class="text-gray-900">Lista de productos</h1>
 </x-slot>
 <div class="py-12">
   <div class="max-w-7x1 mx-auto sm:px6 lg:px-8">
@@ -13,7 +13,7 @@
           </div>
         </div>
       @endif
-      <button type="button" wire:click="crear()" class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">Nuevo</button>
+      <button type="button" wire:click="crear()" class="h-10 px-5 m-2 text-green-100 transition-colors duration-150 bg-green-700 rounded-lg focus:shadow-outline hover:bg-green-800">Nuevo</button>
       @if($modal)
         @include('livewire.crear')
       @endif
@@ -33,8 +33,8 @@
                      <td class="border px-4 py-2">{{$producto->descripcion}}</td>
                      <td class="border px-4 py-2">{{$producto->cantidad}}</td>
                     <td class="border px-4 py-2 text-center">
-                      <button wire:click="editar({{ $producto->id }})" class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">Editar</button>
-                      <button wire:click="borrar({{ $producto->id }})" class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">Borrar</button>
+                      <button wire:click="editar({{ $producto->id }})" class="h-10 px-5 m-2 text-blue-100 transition-colors duration-150 bg-blue-600 rounded-lg focus:shadow-outline hover:bg-blue-700">Editar</button>
+                      <button wire:click="borrar({{ $producto->id }})" class="h-10 px-5 m-2 text-red-100 transition-colors duration-150 bg-red-700 rounded-lg focus:shadow-outline hover:bg-red-800">Borrar</button>
                     </td>
                  </tr>
                  @endforeach
