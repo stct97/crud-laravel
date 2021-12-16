@@ -1,10 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\TodoListController;
-use App\Http\Controllers\Controller;
-
-
+//invocar controlador Productos
+use App\Http\Livewire\Productos;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,10 +14,12 @@ use App\Http\Controllers\Controller;
 |
 */
 
-Route::get('todo', [TodoListController::class,'index'])->name('todo');
+Route::get('/', function () {
+    return view('welcome');
+});
 
-// Route::get('/', function () {
-//     return view('login');
-// });
-
-Route::get('/', [Controller::class,'check']);
+Route::middleware(['auth:sanctum', 'verified'])->group(function () {
+    Route::get('/productos', Productos::class);
+    Route::get('/dashboard', function () {
+        return view('dashboard');})->name('dashboard');
+    });
