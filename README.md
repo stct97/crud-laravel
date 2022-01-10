@@ -22,3 +22,16 @@ Lista de productos es accesible, poderosa y provee una herramienta versatil.
 ## Aprendiendo a usar Lista de productos
 
 Tras el pertienente registro en la plataforma, se pueden añadir, modificar y eliminar productos y la respectiva cantidad. Multitud de funcionalidades implementadas como el doble factor para la verificacion de la cuenta.
+
+### Screenshots
+
+![Image text](https://i.imgur.com/BMiMJ8X.png)
+![Image text](https://i.imgur.com/lPHpkQY.png)
+![Image text](https://i.imgur.com/hueC9nY.png)
+![Image text](https://i.imgur.com/XCa6yza.png)
+![Image text](https://i.imgur.com/mlc1luJ.png)
+![Image text](https://i.imgur.com/3uyBkYn.png)
+![Image text](https://i.imgur.com/7YBgDE5.png)
+![Image text](https://i.imgur.com/bkzwI9p.png)
+
+
